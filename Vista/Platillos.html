@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platillos</title>
+    <link rel="stylesheet" href="../Estilos CSS/StylesPlatillos.css" />
+    <link rel="stylesheet" href="../Estilos CSS/StylesGeneral.css" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../Vista/Inicio.html">Inicio</a></li>
+          <li><a href="../Vista/Platillos.html">Platillos</a></li>
+          <li><a href="../Vista/ReservaMesas.html">Reservar</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+  
+        </ul>
+        <div class="logo">
+          <a href="#">
+            <img src="../Imagenes/LogotipoX.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+        </div>
+        <div class="auth-buttons">
+          <a href="../Vista/Login.html" class="btn login">Iniciar Sesión</a>
+          <a href="../Vista/Login.html" class="profile-icon">
+            <img src="../Imagenes/Login.png" alt="Perfil" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="contenedor-platillos">
+      <div class="filtros">
+        <h2>Rango de precio</h2>
+        <div class="rango-precio">
+          <label for="minPrecio">S/</label>
+          <input type="number" id="minPrecio" min="17" max="125" value="17" />
+          <span> - </span>
+          <label for="maxPrecio">S/</label>
+          <input type="number" id="maxPrecio" min="17" max="125" value="125" />
+        </div>
+
+        <h2>Valoración</h2>
+        <div class="valoracion">
+          <select id="estrellas">
+            <option value="1">★☆☆☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="4" selected>★★★★☆</option>
+            <option value="5">★★★★★</option>
+          </select>
+        </div>
+
+        <h2>Descuentos</h2>
+        <div class="descuentos">
+          <button class="descuento" data-descuento="10%">10%</button>
+          <button class="descuento" data-descuento="20%">20%</button>
+          <button class="descuento" data-descuento="30%">30%</button>
+        </div>
+
+        <div class="contenedor-filtro">
+          <button class="boton-aplicarfiltros">Aplicar filtros</button>
+        </div>
+      </div>
+
+      <!-- Lista de platillos a la derecha con carrusel vertical -->
+      <div class="lista-platillos">
+        <h3>Elige un platillo</h3>
+        <div class="carrusel-platillos">
+          <!-- Primer platillo -->
+          <div class="platillo">
+            <div class="imagen-platillo">
+              <img src="../Imagenes/ChopSuey.jpg" alt="Chop Suey" />
+            </div>
+            <div class="info-platillo">
+              <h4>Chop Suey</h4>
+              <p>
+                Es un platillo delicioso que combina una variedad de vegetales frescos
+                salteados con tierna carne y fideos servido con una salsa 
+                especial que realza su sabor.
+        </p>
+              </p>
+            </div>
+            <div class="calificacion-platillo">
+              <div class="rating">4.6 ★ <span>(52 comentarios)</span></div>
+              <div class="precio">
+                <span>S/ 17.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Segundo platillo -->
+          <div class="platillo">
+            <div class="imagen-platillo">
+              <img src="../Imagenes/ChopSuey.jpg" alt="Arroz Chaufa" />
+            </div>
+            <div class="info-platillo">
+              <h4>Arroz Chaufa</h4>
+              <p>
+                El Arroz Chaufa es un platillo emblemático de la cocina peruana, que combina arroz
+                salteado con trozos de carne, huevo y una variedad de verduras.
+              </p>
+            </div>
+            <div class="calificacion-platillo">
+              <div class="rating">4.8 ★ <span>(60 comentarios)</span></div>
+              <div class="precio">
+                <span>S/ 20.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tercer platillo -->
+          <div class="platillo">
+            <div class="imagen-platillo">
+              <img src="../Imagenes/ChopSuey.jpg" alt="Wof-wof Saltado" />
+            </div>
+            <div class="info-platillo">
+              <h4>Wof-Wof saltado</h4>
+              <p>
+                Es un platillo tradicional de la cocina peruana, que presenta un
+                delicioso salteado de carne de res, cebolla, pimiento y tomate, todo combinado con
+                un toque especial de salsa de soya y especias.
+              </p>
+            </div>
+            <div class="calificacion-platillo">
+              <div class="rating">4.7 ★ <span>(45 comentarios)</span></div>
+              <div class="precio">
+                <span>S/ 22.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuarto platillo -->
+          <div class="platillo">
+            <div class="imagen-platillo">
+              <img src="../Imagenes/ChopSuey.jpg" alt="Tallarines saltados" />
+            </div>
+            <div class="info-platillo">
+              <h4>Tallarines saltados</h4>
+              <p>
+                Este platillo consiste en tallarines salteados con verduras frescas como cebolla, pimiento y zanahoria, junto
+                con carne de pollo o cerdo, todo aderezado con salsa de soya y especias. 
+              </p>
+            </div>
+            <div class="calificacion-platillo">
+              <div class="rating">4.5 ★ <span>(40 comentarios)</span></div>
+              <div class="precio">
+                <span>S/ 18.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto platillo -->
+          <div class="platillo">
+            <div class="imagen-platillo">
+              <img src="../Imagenes/ChopSuey.jpg" alt="Aeropuerto" />
+            </div>
+            <div class="info-platillo">
+              <h4>Aeropuerto</h4>
+              <p>
+                El Aeropuerto es un plato emblemático de la gastronomía chifa que combina arroz frito con pollo, cerdo y mariscos, 
+                todo salteado en un wok con una mezcla especial de salsas. 
+                </p>
+            </div>
+            <div class="calificacion-platillo">
+              <div class="rating">4.9 ★ <span>(70 comentarios)</span></div>
+              <div class="precio">
+                <span>S/ 25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-acciones">
+      <button class="boton-mesa" onclick="window.location.href='ReservaMesas.html'">Seleccionar una mesa</button>
+      <button class="boton-reservar" onclick="window.location.href='ReservaMesas.html'">Reservar</button>
+    </div>
+  
+
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="../Imagenes/LogotipoX.png" alt="Logo Lote de Jade" />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>
+            En Lote de Jade, somos apasionados por ofrecer una experiencia culinaria única. Nuestro menú combina lo mejor de la cocina tradicional china 
+            y peruana, utilizando ingredientes frescos y recetas auténticas. Nuestro equipo se esfuerza por brindar un servicio excepcional, asegurando que cada visita sea memorable.
+          </p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2024 <b>Chifa Loto de Jade</b> - Todos los Derechos Reservados.</small
+        >
+      </div>
+    </footer>
+    <script src="../Controlador/scripts.js"></script>
+  </body>
+</html>
