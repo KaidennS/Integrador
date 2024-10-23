@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Mesas</title>
+    <link rel="stylesheet" href="CSS/StylesGeneral.css" />
+    <link rel="stylesheet" href="CSS/StylesMesa.css" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="inicio">Inicio</a></li>
+            <li><a href="platillos">Platillos</a></li>
+            <li><a href="reservaMesas">Reservar</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+    
+          </ul>
+          <div class="logo">
+            <a href="#">
+              <img src="Imagenes/LogotipoX.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar..." />
+          </div>
+          <div class="auth-buttons">
+            <a href="login" class="btn login">Iniciar Sesión</a>
+            <a href="login" class="profile-icon">
+              <img src="Imagenes/Login.png" alt="Perfil" />
+            </a>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <section>
+          <br>
+          <h2>Selecciona una mesa</h2>
+          <div class="leyenda">
+            <span class="indicador disponible"></span> Disponible
+            <span class="indicador no-disponible"></span> Ocupada
+          </div>
+          <!-- Sector de mesas -->
+          <div class="mesas-container">
+            <!-- Mesa 1 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 1</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 2 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 2</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 3 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 3</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 4 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 4</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 5 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 5</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 6 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 6</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 7 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 7</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 8 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 8</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 9 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 9</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 10 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 10</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 11 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 11</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 12 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 12</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 13 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 13</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 14 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 14</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 15 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 15</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 16 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 16</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 17 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 17</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 18 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 18</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 19 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 19</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+            <!-- Mesa 20 -->
+            <div class="mesa disponible">
+                <span class="texto-mesa">Mesa 20</span>
+                <img src="Imagenes/mesa.png" alt="Icono de Mesa">
+              </div>
+          </div>
+        </section>
+        <section>
+          <!-- Seccion de las mesas seleccionadas -->
+          <h2>Tu Selección</h2>
+          <div class="seleccion-container">
+              <ul id="mesaSeleccionada"></ul>    
+              <button id="deseleccionarTodo">Deseleccionar Todo</button>
+              <button id="continuar"  onclick="window.location.href='pago'" class="btn-continuar">Continuar</button>
+          </div>
+    </section> 
+      </main>
+
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img src="Imagenes/LogotipoX.png" alt="Logo Lote de Jade" />
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>
+              En Lote de Jade, somos apasionados por ofrecer una experiencia culinaria única. Nuestro menú combina lo mejor de la cocina tradicional china 
+              y peruana, utilizando ingredientes frescos y recetas auténticas. Nuestro equipo se esfuerza por brindar un servicio excepcional, asegurando que cada visita sea memorable.
+            </p>
+          </div>
+          <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small
+          >&copy; 2024 <b>Chifa Loto de Jade</b> - Todos los Derechos Reservados.</small
+          >
+        </div>
+      </footer>
+    <script src="JS/script.js"></script>
+    <script src="JS/scriptsMesas.js"></script>
+</body>
+</html>
